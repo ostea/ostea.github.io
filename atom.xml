@@ -63,11 +63,11 @@
   </entry>
   
   <entry>
-    <title>开博~</title>
-    <link href="http://loopbar.cc/2015/09/28/Hello-World/"/>
-    <id>http://loopbar.cc/2015/09/28/Hello-World/</id>
+    <title>New Start</title>
+    <link href="http://loopbar.cc/2015/09/28/New%20Start/"/>
+    <id>http://loopbar.cc/2015/09/28/New Start/</id>
     <published>2015-09-28T07:25:47.000Z</published>
-    <updated>2018-03-20T12:38:08.000Z</updated>
+    <updated>2018-03-20T12:42:30.000Z</updated>
     
     <content type="html"><![CDATA[<html><head></head><body><h1 id="HelloWorld"><a href="#HelloWorld" class="headerlink" title="HelloWorld"></a>HelloWorld</h1><p> <strong>&#x8FD9;&#x91CC;&#x662F;chaos&#xFF0C;Peace &amp; Love</strong></p><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true}});</script></body></html>]]></content>
     
