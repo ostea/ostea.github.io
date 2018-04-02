@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://loopbar.cc/"/>
-  <updated>2018-04-02T09:20:38.000Z</updated>
+  <updated>2018-04-02T09:24:49.000Z</updated>
   <id>http://loopbar.cc/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>interview Summary of android</title>
+    <title>Android面试二三事</title>
     <link href="http://loopbar.cc/2018/04/02/android-interview-Summary/"/>
     <id>http://loopbar.cc/2018/04/02/android-interview-Summary/</id>
     <published>2018-04-02T08:56:22.000Z</published>
-    <updated>2018-04-02T09:20:38.000Z</updated>
+    <updated>2018-04-02T09:24:49.000Z</updated>
     
-    <content type="html"><![CDATA[<html><head></head><body><blockquote><p>&#x6700;&#x8FD1;&#x79BB;&#x804C;&#x4E86;T_T&#xFF0C;&#x5FD9;&#x7740;&#x627E;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x5B9A;&#x671F;&#x66F4;&#x65B0;18&#x5E74;android&#x5E02;&#x573A;&#x4E8C;&#x4E09;&#x4E8B;&#x3002; base &#x6DF1;&#x5733; ,  peace&amp;love</p></blockquote><h3 id="&#x9762;&#x8BD5;&#x51C6;&#x5907;"><a href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;" class="headerlink" title="&#x9762;&#x8BD5;&#x51C6;&#x5907;"></a>&#x9762;&#x8BD5;&#x51C6;&#x5907;</h3><ul><li><a href="https://leetcode.com/" target="_blank" rel="noopener">leetcode &#x7B97;&#x6CD5;&#x5237;&#x4E00;&#x5237;</a></li><li><a href="https://github.com/ostea/LearningNotes" target="_blank" rel="noopener">Android &#x9762;&#x8BD5;&#x51C6;&#x5907;</a></li><li><a href="www.codekk.com">codekk&#x6E90;&#x7801;&#x9605;&#x8BFB;</a></li><li>&#x5BF9;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x68B3;&#x7406;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x95EA;&#x5149;&#x70B9; &#x54EA;&#x4E9B;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#x7684;</li><li>&#x4FDD;&#x6301;&#x597D;&#x8EAB;&#x5FC3;&#xFF0C;&#x4EAB;&#x53D7;&#x8FD9;&#x6BB5;&#x95F2;&#x6687;&#x65F6;&#x5149; :raised_hands:</li></ul><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true}});</script></body></html>]]></content>
+    <content type="html"><![CDATA[<html><head></head><body><blockquote><p>&#x6700;&#x8FD1;&#x79BB;&#x804C;&#x4E86;T_T&#xFF0C;&#x5FD9;&#x7740;&#x627E;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x5B9A;&#x671F;&#x66F4;&#x65B0;18&#x5E74;android&#x5E02;&#x573A;&#x4E8C;&#x4E09;&#x4E8B;&#x3002; base &#x6DF1;&#x5733; ,  peace&amp;love</p></blockquote><h3 id="&#x9762;&#x8BD5;&#x51C6;&#x5907;"><a href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;" class="headerlink" title="&#x9762;&#x8BD5;&#x51C6;&#x5907;"></a>&#x9762;&#x8BD5;&#x51C6;&#x5907;</h3><ul><li><a href="https://leetcode.com/" target="_blank" rel="noopener">leetcode &#x7B97;&#x6CD5;&#x5237;&#x4E00;&#x5237;</a></li><li><a href="https://github.com/ostea/LearningNotes" target="_blank" rel="noopener">Android &#x9762;&#x8BD5;&#x51C6;&#x5907;</a></li><li><a href="http://p.codekk.com/" target="_blank" rel="noopener">codekk&#x6E90;&#x7801;&#x9605;&#x8BFB;</a></li><li>&#x5BF9;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x68B3;&#x7406;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x95EA;&#x5149;&#x70B9; &#x54EA;&#x4E9B;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#x7684;</li><li>&#x4FDD;&#x6301;&#x597D;&#x8EAB;&#x5FC3;&#xFF0C;&#x4EAB;&#x53D7;&#x8FD9;&#x6BB5;&#x95F2;&#x6687;&#x65F6;&#x5149; :raised_hands:</li></ul><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true}});</script></body></html>]]></content>
     
     <summary type="html">
     

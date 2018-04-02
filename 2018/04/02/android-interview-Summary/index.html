@@ -1,1 +1,855 @@
-<!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><script></script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4"><link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222"><meta name="keywords" content="&#x9762;&#x8BD5;,"><link rel="alternate" href="/atom.xml" title="loopbar" type="application/atom+xml"><meta name="description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x"><meta name="keywords" content="&#x9762;&#x8BD5;"><meta property="og:type" content="article"><meta property="og:title" content="interview Summary of android"><meta property="og:url" content="http://loopbar.cc/2018/04/02/android-interview-Summary/index.html"><meta property="og:site_name" content="loopbar"><meta property="og:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x"><meta property="og:locale" content="zh-Hans"><meta property="og:updated_time" content="2018-04-02T09:20:38.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="interview Summary of android"><meta name="twitter:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Mist",version:"5.1.4",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!1,onmobile:!1},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="http://loopbar.cc/2018/04/02/android-interview-Summary/"><title>interview Summary of android | loopbar</title></head><body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div> <a href="https://github.com/ostea"><img style="position:absolute;top:0;left:0;border:0" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a> <a href="https://github.com/ostea"><img style="position:absolute;top:0;right:0;border:0" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a><header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">loopbar</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">chaos</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> &#x9996;&#x9875;</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> &#x5F52;&#x6863;</a></li></ul></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://loopbar.cc/2018/04/02/android-interview-Summary/"><span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="name" content="chaos"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.png"></span><span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="loopbar"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">interview Summary of android</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span> <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-04-02T16:56:22+08:00">2018-04-02</time></span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">&#x5B57;&#x6570;&#x7EDF;&#x8BA1;:</span> <span title="&#x5B57;&#x6570;&#x7EDF;&#x8BA1;">86</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i></span> <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x65F6;&#x957F; &#x2248;</span> <span title="&#x9605;&#x8BFB;&#x65F6;&#x957F;">1</span></div></div></header><div class="post-body" itemprop="articleBody"><blockquote><p>&#x6700;&#x8FD1;&#x79BB;&#x804C;&#x4E86;T_T&#xFF0C;&#x5FD9;&#x7740;&#x627E;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x5B9A;&#x671F;&#x66F4;&#x65B0;18&#x5E74;android&#x5E02;&#x573A;&#x4E8C;&#x4E09;&#x4E8B;&#x3002; base &#x6DF1;&#x5733; , peace&amp;love</p></blockquote><h3 id="&#x9762;&#x8BD5;&#x51C6;&#x5907;"><a href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;" class="headerlink" title="&#x9762;&#x8BD5;&#x51C6;&#x5907;"></a>&#x9762;&#x8BD5;&#x51C6;&#x5907;</h3><ul><li><a href="https://leetcode.com/" target="_blank" rel="noopener">leetcode &#x7B97;&#x6CD5;&#x5237;&#x4E00;&#x5237;</a></li><li><a href="https://github.com/ostea/LearningNotes" target="_blank" rel="noopener">Android &#x9762;&#x8BD5;&#x51C6;&#x5907;</a></li><li><a href="www.codekk.com">codekk&#x6E90;&#x7801;&#x9605;&#x8BFB;</a></li><li>&#x5BF9;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x68B3;&#x7406;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x95EA;&#x5149;&#x70B9; &#x54EA;&#x4E9B;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#x7684;</li><li>&#x4FDD;&#x6301;&#x597D;&#x8EAB;&#x5FC3;&#xFF0C;&#x4EAB;&#x53D7;&#x8FD9;&#x6BB5;&#x95F2;&#x6687;&#x65F6;&#x5149; :raised_hands:</li></ul><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({model:{jsonPath:"/live2dw/assets/assets/wanko.model.json"},display:{position:"left",width:150,height:300},mobile:{show:!0}})</script></div><div><div><div style="text-align:center;color:#ccc;font-size:14px">-------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------</div></div></div><div><div class="my_post_copyright"><script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script><script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><p><span>&#x672C;&#x6587;&#x6807;&#x9898;:</span><a href="/2018/04/02/android-interview-Summary/">interview Summary of android</a></p><p><span>&#x6587;&#x7AE0;&#x4F5C;&#x8005;:</span><a href="/" title="&#x8BBF;&#x95EE; chaos &#x7684;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;">chaos</a></p><p><span>&#x53D1;&#x5E03;&#x65F6;&#x95F4;:</span>2018&#x5E74;04&#x6708;02&#x65E5; - 16:04</p><p><span>&#x6700;&#x540E;&#x66F4;&#x65B0;:</span>2018&#x5E74;04&#x6708;02&#x65E5; - 17:04</p><p><span>&#x539F;&#x59CB;&#x94FE;&#x63A5;:</span><a href="/2018/04/02/android-interview-Summary/" title="interview Summary of android">http://loopbar.cc/2018/04/02/android-interview-Summary/</a><span class="copy-path" title="&#x70B9;&#x51FB;&#x590D;&#x5236;&#x6587;&#x7AE0;&#x94FE;&#x63A5;"><i class="fa fa-clipboard" data-clipboard-text="http://loopbar.cc/2018/04/02/android-interview-Summary/" aria-label="&#x590D;&#x5236;&#x6210;&#x529F;&#xFF01;"></i></span></p><p><span>&#x8BB8;&#x53EF;&#x534F;&#x8BAE;:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x7981;&#x6B62;&#x6F14;&#x7ECE; 4.0 &#x56FD;&#x9645;</a> &#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x539F;&#x6587;&#x94FE;&#x63A5;&#x53CA;&#x4F5C;&#x8005;&#x3002;</p></div><script>var clipboard=new Clipboard(".fa-clipboard");$(".fa-clipboard").click(function(){clipboard.on("success",function(){swal({title:"",text:"复制成功",icon:"success",showConfirmButton:!0})})})</script></div><div><div style="padding:10px 0;margin:20px auto;width:90%;text-align:center"><div>&#x597D;&#x6C49;&#x501F;&#x6839;&#x70DF;</div> <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&apos;QR&apos;); if (qr.style.display === &apos;none&apos;) {qr.style.display=&apos;block&apos;;} else {qr.style.display=&apos;none&apos;}"> <span>&#x6253;&#x8D4F;</span></button><div id="QR" style="display:none"><div id="wechat" style="display:inline-block"> <img id="wechat_qr" src="/images/wechatpay.png" alt="chaos &#x5FAE;&#x4FE1;&#x652F;&#x4ED8;"><p>&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;</p></div><div id="alipay" style="display:inline-block"> <img id="alipay_qr" src="/images/alipay.png" alt="chaos &#x652F;&#x4ED8;&#x5B9D;"><p>&#x652F;&#x4ED8;&#x5B9D;</p></div></div></div></div><footer class="post-footer"><div class="post-tags"> <a href="/tags/&#x9762;&#x8BD5;/" rel="tag"># &#x9762;&#x8BD5;</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2018/01/12/MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;/" rel="next" title="MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;"><i class="fa fa-chevron-left"></i> MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"></div></div></footer></div></article><div class="post-spread"></div></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> &#x6587;&#x7AE0;&#x76EE;&#x5F55;</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> &#x7AD9;&#x70B9;&#x6982;&#x89C8;</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="chaos"><p class="site-author-name" itemprop="name">chaos</p><p class="site-description motion-element" itemprop="description">&#x6211;&#x4F1A;&#x6D3B;&#x7684;&#x6BD4;&#x4F60;&#x4E45;</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">4</span> <span class="site-state-item-name">&#x65E5;&#x5FD7;</span></a></div><div class="site-state-item site-state-tags"> <span class="site-state-item-count">3</span> <span class="site-state-item-name">&#x6807;&#x7B7E;</span></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/ostea" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="mailto:oscc92@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i> E-Mail</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> &#x63A8;&#x8350;&#x9605;&#x8BFB;</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="http://thingbar.cn/" title="&#x98D8;&#x8FC7;&#x7684;&#x5C0F;&#x725B;" target="_blank">&#x98D8;&#x8FC7;&#x7684;&#x5C0F;&#x725B;</a></li></ul></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;"><span class="nav-number">1.</span> <span class="nav-text">&#x9762;&#x8BD5;&#x51C6;&#x5907;</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span><span class="with-love"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">chaos</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-area-chart"></i></span> <span class="post-meta-item-text">Site words total count:</span> <span title="Site words total count">1.1k</span></div><div class="powered-by"><i class="fa fa-user-md"></i> <span id="busuanzi_container_site_uv">&#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570;:<span id="busuanzi_value_site_uv"></span></span></div><div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/love.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({model:{jsonPath:"/live2dw/assets/assets/wanko.model.json"},display:{position:"left",width:150,height:300},mobile:{show:!0}})</script></body></html>
+<!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="&#x9762;&#x8BD5;,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="loopbar" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x">
+<meta name="keywords" content="&#x9762;&#x8BD5;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B;">
+<meta property="og:url" content="http://loopbar.cc/2018/04/02/android-interview-Summary/index.html">
+<meta property="og:site_name" content="loopbar">
+<meta property="og:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-02T09:24:49.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B;">
+<meta name="twitter:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x79BB;&amp;#x804C;&amp;#x4E86;T_T&amp;#xFF0C;&amp;#x5FD9;&amp;#x7740;&amp;#x627E;&amp;#x5DE5;&amp;#x4F5C;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x4E0D;&amp;#x5B9A;&amp;#x671F;&amp;#x66F4;&amp;#x65B0;18&amp;#x5E74;android&amp;#x5E02;&amp;#x573A;&amp;#x4E8C;&amp;#x">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://loopbar.cc/2018/04/02/android-interview-Summary/">
+
+
+
+
+
+  <title>Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B; | loopbar</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/ostea"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <a href="https://github.com/ostea"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">loopbar</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">chaos</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://loopbar.cc/2018/04/02/android-interview-Summary/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chaos">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="loopbar">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+              
+              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-04-02T16:56:22+08:00">
+                2018-04-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x5B57;&#x6570;&#x7EDF;&#x8BA1;:</span>
+                
+                <span title="&#x5B57;&#x6570;&#x7EDF;&#x8BA1;">
+                  86
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x65F6;&#x957F; &#x2248;</span>
+                
+                <span title="&#x9605;&#x8BFB;&#x65F6;&#x957F;">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>&#x6700;&#x8FD1;&#x79BB;&#x804C;&#x4E86;T_T&#xFF0C;&#x5FD9;&#x7740;&#x627E;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x5B9A;&#x671F;&#x66F4;&#x65B0;18&#x5E74;android&#x5E02;&#x573A;&#x4E8C;&#x4E09;&#x4E8B;&#x3002; base &#x6DF1;&#x5733; ,  peace&amp;love</p>
+</blockquote>
+<h3 id="&#x9762;&#x8BD5;&#x51C6;&#x5907;"><a href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;" class="headerlink" title="&#x9762;&#x8BD5;&#x51C6;&#x5907;"></a>&#x9762;&#x8BD5;&#x51C6;&#x5907;</h3><ul>
+<li><a href="https://leetcode.com/" target="_blank" rel="noopener">leetcode &#x7B97;&#x6CD5;&#x5237;&#x4E00;&#x5237;</a></li>
+<li><a href="https://github.com/ostea/LearningNotes" target="_blank" rel="noopener">Android &#x9762;&#x8BD5;&#x51C6;&#x5907;</a></li>
+<li><a href="http://p.codekk.com/" target="_blank" rel="noopener">codekk&#x6E90;&#x7801;&#x9605;&#x8BFB;</a></li>
+<li>&#x5BF9;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x68B3;&#x7406;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x95EA;&#x5149;&#x70B9; &#x54EA;&#x4E9B;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#x7684;</li>
+<li>&#x4FDD;&#x6301;&#x597D;&#x8EAB;&#x5FC3;&#xFF0C;&#x4EAB;&#x53D7;&#x8FD9;&#x6BB5;&#x95F2;&#x6687;&#x65F6;&#x5149; :raised_hands:</li>
+</ul>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true}});</script>
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------</div>
+    
+</div>
+        
+      </div>
+
+      <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>&#x672C;&#x6587;&#x6807;&#x9898;:</span><a href="/2018/04/02/android-interview-Summary/">Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B;</a></p>
+  <p><span>&#x6587;&#x7AE0;&#x4F5C;&#x8005;:</span><a href="/" title="&#x8BBF;&#x95EE; chaos &#x7684;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;">chaos</a></p>
+  <p><span>&#x53D1;&#x5E03;&#x65F6;&#x95F4;:</span>2018&#x5E74;04&#x6708;02&#x65E5; - 16:04</p>
+  <p><span>&#x6700;&#x540E;&#x66F4;&#x65B0;:</span>2018&#x5E74;04&#x6708;02&#x65E5; - 17:04</p>
+  <p><span>&#x539F;&#x59CB;&#x94FE;&#x63A5;:</span><a href="/2018/04/02/android-interview-Summary/" title="Android&#x9762;&#x8BD5;&#x4E8C;&#x4E09;&#x4E8B;">http://loopbar.cc/2018/04/02/android-interview-Summary/</a>
+    <span class="copy-path" title="&#x70B9;&#x51FB;&#x590D;&#x5236;&#x6587;&#x7AE0;&#x94FE;&#x63A5;"><i class="fa fa-clipboard" data-clipboard-text="http://loopbar.cc/2018/04/02/android-interview-Summary/" aria-label="&#x590D;&#x5236;&#x6210;&#x529F;&#xFF01;"></i></span>
+  </p>
+  <p><span>&#x8BB8;&#x53EF;&#x534F;&#x8BAE;:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x7981;&#x6B62;&#x6F14;&#x7ECE; 4.0 &#x56FD;&#x9645;</a> &#x8F6C;&#x8F7D;&#x8BF7;&#x4FDD;&#x7559;&#x539F;&#x6587;&#x94FE;&#x63A5;&#x53CA;&#x4F5C;&#x8005;&#x3002;</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+      
+      </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>&#x597D;&#x6C49;&#x501F;&#x6839;&#x70DF;</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&apos;QR&apos;); if (qr.style.display === &apos;none&apos;) {qr.style.display=&apos;block&apos;;} else {qr.style.display=&apos;none&apos;}">
+    <span>&#x6253;&#x8D4F;</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="chaos &#x5FAE;&#x4FE1;&#x652F;&#x4ED8;">
+        <p>&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="chaos &#x652F;&#x4ED8;&#x5B9D;">
+        <p>&#x652F;&#x4ED8;&#x5B9D;</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/&#x9762;&#x8BD5;/" rel="tag"># &#x9762;&#x8BD5;</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/12/MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;/" rel="next" title="MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;">
+                <i class="fa fa-chevron-left"></i> MAC&#x66F4;&#x65B0;&#x5BFC;&#x81F4;git&#x5F02;&#x5E38;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="chaos">
+            
+              <p class="site-author-name" itemprop="name">chaos</p>
+              <p class="site-description motion-element" itemprop="description">&#x6211;&#x4F1A;&#x6D3B;&#x7684;&#x6BD4;&#x4F60;&#x4E45;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ostea" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:oscc92@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                &#x63A8;&#x8350;&#x9605;&#x8BFB;
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://thingbar.cn/" title="&#x98D8;&#x8FC7;&#x7684;&#x5C0F;&#x725B;" target="_blank">&#x98D8;&#x8FC7;&#x7684;&#x5C0F;&#x725B;</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x9762;&#x8BD5;&#x51C6;&#x5907;"><span class="nav-number">1.</span> <span class="nav-text">&#x9762;&#x8BD5;&#x51C6;&#x5907;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">chaos</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count:</span>
+    
+    <span title="Site words total count">1.1k</span>
+  
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  &#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570;:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+  
+
+
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true}});</script></body><!-- 页面点击小红心 --></html>
